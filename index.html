@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema de Estacionamento</title>
+</head>
+<body>
+    <h1>Sistema de Estacionamento</h1>
+    <input type="text" id="nomeCliente" placeholder="Nome do Cliente">
+    
+    <div id="vagas">
+        <h2>Selecione as Vagas</h2>
+        <label><input type="checkbox" value="Vaga 1 - R$ 10,00/hora"> Vaga 1 - R$ 10,00/hora</label>
+        <label><input type="checkbox" value="Vaga 2 - R$ 12,00/hora"> Vaga 2 - R$ 12,00/hora</label>
+        <label><input type="checkbox" value="Vaga 3 - R$ 8,00/hora"> Vaga 3 - R$ 8,00/hora</label>
+        <label><input type="checkbox" value="Vaga 4 - R$ 15,00/hora"> Vaga 4 - R$ 15,00/hora</label>
+        <label><input type="checkbox" value="Vaga 5 - R$ 9,00/hora"> Vaga 5 - R$ 9,00/hora</label>
+    </div>
+
+    <input type="time" id="horaEntrada" placeholder="Horário de Entrada">
+    <input type="time" id="horaSaida" placeholder="Horário de Saída">
+    
+    <button id="registrarPedido">Registrar Pedido</button>
+    <div id="resultado"></div>
+
+    <h3>Calcular Troco</h3>
+    <input type="number" id="valorRecebido" placeholder="Valor Recebido">
+    <button id="calcularTroco">Calcular Troco</button>
+    <div id="trocoResultado"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
